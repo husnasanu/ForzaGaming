@@ -327,7 +327,27 @@ div{
 @media (max-width: 400px) {
   *{
     margin-top: 0px;
+   margin-left: auto;
+   margin-right: auto;
+
   }
+  .navbar-nav .nav-link {
+    margin-top: 10px;
+}
+
+.btn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.navbar-toggler {
+    margin-left: auto;
+}
+
+.modal-dialog {
+    max-width: 90%;
+    margin: 1.75rem auto;
+}
   .del {
     display: none;
   }

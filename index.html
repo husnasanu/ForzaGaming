@@ -18,99 +18,77 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="./main.js"></script>
 </head>
-<body>
+<body >
 
   
        <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-dark">
-    <!-- Container wrapper -->
-    <div class="container">
-      <!-- Navbar brand -->
-      <a class=" navbar-brand me-2" href="#">
-        <img
-          src="./image/logo.png"
-          width="90px"
-          height="50px"
-          alt="MDB Logo"
-          loading="lazy"
-          style="margin-top: -1px;"
-        />
-      </a>
-     
-      <!-- Toggle button -->
-      <button
-        data-mdb-collapse-init
-        class="navbar-toggler"
-        type="button"
-        data-mdb-target="#navbarButtonsExample"
-        aria-controls="navbarButtonsExample"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <i class="fas fa-bars"></i>
-      </button>
-  
-      <!-- Collapsible wrapper -->
-      <div class="collapse navbar-collapse" id="navbarButtonsExample">
-        <!-- Left links -->
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="#"><span id="title" class="fw-bolder ">Forza</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light ms-3 mt-4" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light mt-4" href="https://forums.forza.net/">Forums</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light mt-4" href="./about.html">Motorspot</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light mt-4" href="#">Community</a>
-          </li>
-          
-        </ul>
-        <!-- Left links -->
-  
-        <div style="flex-wrap: wrap;" class="d-flex align-items-center w-100">
-         <!-- Button trigger modal -->
-<button style="margin-left: 500px;" type="button" class="btn "  data-bs-toggle="modal" data-bs-target="#exampleModal">
-  <strong>Sign up for Free</strong>
-  <div id="container-stars">
-    <div id="stars"></div>
-  </div>
-
-  <div id="glow">
-    <div class="circle"></div>
-    <div class="circle"></div>
-  </div>
-</button>
-<!-- Modal -->
-<div width="400px" height="500px"  class="  glow-border modal fade mt-5 btn-danger" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div id="form" class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-      <input id="usernameInput" class="form-control mb-2" type="text" placeholder="Enter Username"> <br> 
-      <input id="passwordInput"  class="form-control mb-2" type="text" placeholder="Enter Password"> 
-      </div>
-      <div class="modal-footer">
-        <button  onclick="login()" type="button" class="btn btn-primary">Login</button>
-      </div>
-    </div>
-  </div>
-</div>
-          
+       <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <!-- Container wrapper -->
+        <div class="container">
+            <!-- Navbar brand -->
+            <a class="navbar-brand me-2" href="#">
+                <img src="./image/logo.png" width="90px" height="50px" alt="MDB Logo" loading="lazy" style="margin-top: -1px;" />
+            </a>
+    
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarButtonsExample" aria-controls="navbarButtonsExample" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+    
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarButtonsExample">
+                <!-- Left links -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span id="title" class="fw-bolder text-light">Forza</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light ms-3" href="#">Home</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./about.html">Motorspot</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="#">Forums</a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Community</a>
+                    </li>
+                </ul>
+                <!-- Left links -->
+    
+                <!-- Right side content (Sign-up button and modal) -->
+                <div class="d-flex align-items-center ms-lg-5">
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <strong>Sign up for Free</strong>
+                    </button>
+    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <input id="usernameInput" class="form-control mb-2" type="text" placeholder="Enter Username">
+                                    <input id="passwordInput" class="form-control mb-2" type="password" placeholder="Enter Password">
+                                </div>
+                                <div class="modal-footer">
+                                    <button onclick="login()" type="button" class="btn btn-primary">Login</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Collapsible wrapper -->
         </div>
-      </div>
-      <!-- Collapsible wrapper -->
-    </div>
-    <!-- Container wrapper -->
-  </nav>
+        <!-- Container wrapper -->
+    </nav>
+    
   <!-- Navbar -->
  <div  class="banner w-100 shadow">
 .
@@ -130,7 +108,7 @@
         </div>
        
     </div>
-    <div  class=" ps-4 col-6  glow-border">
+    <div  class=" ps-4 col-6  glow-border container-fluid">
         <img class="imgs" src="./image/forza1.webp" height="300px" width="100%" alt="">
     </div>
   </div>
@@ -190,7 +168,7 @@
     </div>
    </div>
    
-<section>
+<section class=" w-100 ">
   <h1 data-aos="fade-up"
   data-aos-duration="3000"  class="text-center text-danger pt-5 pb-3">FAQ</h1>
   <h5 data-aos="fade-down"
@@ -239,7 +217,7 @@
 </div>
                
 </section>
-<section class="d-flex pt-5 ">
+<section class="d-flex w-100  pt-5 ">
   <div class="col-3"></div>
  
   <div class="col-6 bg-light  glow-border ">
