@@ -1,0 +1,1 @@
+.form-select{border:2px solid transparent;transition:border-color .2s ease-in-out,background-color .2s ease-in-out}.form-select[disabled]{cursor:not-allowed}.form-select--disabled{background-color:#bbb;color:#666}.form-select--pending{background-color:#fee4b3;border-color:#fdbd40}.form-select--success{background-color:#ceecce;border-color:#1a7619}

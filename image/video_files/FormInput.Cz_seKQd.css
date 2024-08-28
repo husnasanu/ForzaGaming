@@ -1,0 +1,1 @@
+.form-input{border:2px solid transparent;transition:border-color .2s ease-in-out,background-color .2s ease-in-out}.form-input--pending{background-color:#fee4b3;border-color:#fdbd40}.form-input--success{background-color:#ceecce;border-color:#1a7619}.form-input[disabled]{background-color:#bbb;color:#666;cursor:not-allowed}

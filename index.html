@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faster Veocity</title>
+    <link rel="icon" type="image/png" href="https://1000logos.net/wp-content/uploads/2020/09/Forza-Horizon-emblem.jpg">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+    <!-- AOS library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="./main.js"></script>
+</head>
+<body>
+
+  
+       <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <!-- Container wrapper -->
+    <div class="container">
+      <!-- Navbar brand -->
+      <a class=" navbar-brand me-2" href="#">
+        <img
+          src="./image/logo.png"
+          width="90px"
+          height="50px"
+          alt="MDB Logo"
+          loading="lazy"
+          style="margin-top: -1px;"
+        />
+      </a>
+     
+      <!-- Toggle button -->
+      <button
+        data-mdb-collapse-init
+        class="navbar-toggler"
+        type="button"
+        data-mdb-target="#navbarButtonsExample"
+        aria-controls="navbarButtonsExample"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarButtonsExample">
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span id="title" class="fw-bolder ">Forza</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light ms-3 mt-4" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light mt-4" href="https://forums.forza.net/">Forums</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light mt-4" href="./about.html">Motorspot</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light mt-4" href="#">Community</a>
+          </li>
+          
+        </ul>
+        <!-- Left links -->
+  
+        <div style="flex-wrap: wrap;" class="d-flex align-items-center w-100">
+         <!-- Button trigger modal -->
+<button style="margin-left: 500px;" type="button" class="btn "  data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <strong>Sign up for Free</strong>
+  <div id="container-stars">
+    <div id="stars"></div>
+  </div>
+
+  <div id="glow">
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+</button>
+<!-- Modal -->
+<div width="400px" height="500px"  class="  glow-border modal fade mt-5 btn-danger" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div id="form" class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <input id="usernameInput" class="form-control mb-2" type="text" placeholder="Enter Username"> <br> 
+      <input id="passwordInput"  class="form-control mb-2" type="text" placeholder="Enter Password"> 
+      </div>
+      <div class="modal-footer">
+        <button  onclick="login()" type="button" class="btn btn-primary">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        </div>
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+ <div  class="banner w-100 shadow">
+.
+ </div>
+
+
+  <div   style="flex-wrap: wrap;" class="  w-100 d-flex align-items-justify text-center pt-5 shadow px-3"> 
+    <div  class=" col-6 my-4 px-3  glow-border">
+        <h1 data-aos="fade-up-right" class=" text-danger ">Get Forza Motorsport</h1>
+        <p>Out-build the competition in the new Builders Cup Career Mode. <span class="del">Race in adjudicated multiplayer events. Compete in over 500 cars across 20 world-famous tracks with cutting edge AI, advanced physics, tire and fuel strategy, 
+          and driver and safety ratings. Purchase the Premium Edition or Premium Add-Ons Bundle to get Car Pass, Race Day Car Pack, VIP and Welcome Pack.</span>
+        </p>
+        <div class="text-center">
+          <button  data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine" onclick="store()" class="btn btn-danger p-2 my-4"> Microsoft Store</button>
+        </div>
+       
+    </div>
+    <div  class=" ps-4 col-6  glow-border">
+        <img class="imgs" src="./image/forza1.webp" height="300px" width="100%" alt="">
+    </div>
+  </div>
+  </div>
+    <div   style="flex-wrap: wrap;" class="w-100 d-flex">
+        <div class="col-6  glow-border">
+            <img class="img-fluid ps-3" class="w-100" src="./image/fh5.jpg" alt="">
+            <img data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" class="  mt-4 " src="./image/f66.jpg" width="100%" height="400px" alt="">
+        </div>
+        <div class="col-6  glow-border  pt-5 align-items-center text-center px-3 pb-3">
+            <h1 data-aos="fade-up-right" class=" text-danger my-5">Keep Calm and Game On </h1>
+            <p class="d1">Gaming has a certain form in which it is organized. It has different levels and a sense of participation. <span class="del">
+              Achievement is very important.
+            You are constantly judged in relation to earning points. I think that's a way many people have learned to understand the world.
+            </span></p>
+            <img data-aos="fade-up"
+            data-aos-anchor-placement="top-center" width="100%" src="./image/forza3.webp" alt="">
+           
+        </div>
+       
+    </div>
+    <!--AOS fade up -->
+   <div class="mt-3 w-100  text-center shadow">
+    <h2 data-aos="fade-up-right" class=" dance text-danger">Gaming brings people together</h2>
+    <div  style="flex-wrap: wrap;" class="row d-flex w-100 shadow mt-3 px-5 pb-5 mb-1">
+        <div  data-aos="fade-up" class="col-3   glow-border">
+            <h4></h4>
+            <img class=" imgs mb-3" src="./image/forza2.jpeg" alt="" width="100%" height="300px">
+            <p class=" del mb-3" >A demo was released on October 9, 2012. The first trailer for Forza Horizon was leaked on March 3, 2012. It showed several sports cars racing in a open environment based around a musical festival. 
+                It was developed by Playground Games and Turn 10 Studios.</p>
+                
+            </div>
+        <div  data-aos="fade-right" class="col-3  glow-border" >
+            <img class=" imgs mb-3 " src="./image/f2.avif"width="100%" height="300px" alt="">
+            <p class=" del mb-3">
+                Google users
+                Forza Horizon 2 is a 2014 racing video game developed for Microsoft's Xbox One and Xbox 360 consoles. It is the sequel to 2012's Forza Horizon,
+                 the seventh instalment in the Forza series, and the series' first multi-console instalmen
+            </p>
+        </div>
+        <div  data-aos="fade-up" class="col-3  glow-border">
+            <img class=" imgs mb-3 " src="./image/f3.jpg" width="100%" height="300px" alt="">
+            <p class=" del mb-3"> 
+                Forza Horizon 3 is a 2016 racing video game developed by Playground Games and published by Microsoft Studios for the Xbox One and Windows.
+                 It is the ninth instalment in the Forza series and the third instalment in the Forza Horizon sub-series. 
+            </p>
+        </div>
+        <div data-aos="fade-right" class="col-3  glow-border">
+            <img class="imgs mb-3 " src="./image/f4.png"width="100%"  height="300px"  alt="">
+            <p class=" del mb-3">
+                Forza Horizon 4 is a 2018 racing video game developed by Playground Games and published by Microsoft Studios. It was released on 2 October 2018 for Windows and Xbox One after
+                 being announced at Xbox's E3 2018 conference. An enhanced version of the game was released on Xbox Series X/S on 10 November 2020. 
+            </p>
+        </div>
+    </div>
+   </div>
+   
+<section>
+  <h1 data-aos="fade-up"
+  data-aos-duration="3000"  class="text-center text-danger pt-5 pb-3">FAQ</h1>
+  <h5 data-aos="fade-down"
+  data-aos-duration="3000" class="text-center text-secondary">Your Forza Questions, Answered.</h5>
+  <p data-aos="fade-up"
+  data-aos-duration="3000" class="text-center">Have a Forza Horizon question? Whether you’re driving on the open road or a racetrack, <span class="del">our dedicated
+    FAQs have the answers you need so you can swiftly return to the driver’s seat.</span></p>
+    <div class="align-items-center text-center p-5">
+      <img id="imgadjust" class="bg-seccondary img-fluid" src="./image/Forza-Horizon-emblem (1).jpg" width="500px" height="150px"
+      alt="">
+    </div>
+    <hr>
+   <h1 class="text-center text-light py-5">Get Into The Mechanics</h1>
+  <div class="d-flex justify-content-evenly px-5">
+          <div  class="image-container col-4  glow-border">
+            <img data-aos="fade-down-left" class="w-100 p-2 rounded" src="./image/media1.webp" alt="Your Image">
+            <div class="overlay">Cooperative and competitive game modes</div>
+        </div>
+        <div class="image-container col-4  glow-border">
+          <img data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom" class="w-100 p-2 rounded"  src="./image/media2.webp" alt="Your Image">
+          <div class="overlay">Everyone can play</div>
+      </div>
+      <div class="image-container col-4  glow-border">
+        <img data-aos="fade-down-right" class="w-100 p-2 rounded" src="./image/media3.webp" alt="Your Image">
+        <div class="overlay">Create your own fun</div>
+      </div>
+
+  </div>
+
+  <div class="d-flex justify-content-evenly px-5">
+    <div  class="image-container col-4  glow-border">
+      <img data-aos="fade-down-left" class="w-100 p-2 rounded" src="./image/media4.webp" alt="Your Image">
+      <div class="overlay">Limitless, fun driving action</div>
+  </div>
+  <div class="image-container col-4  glow-border">
+    <img data-aos="fade-up"
+    data-aos-anchor-placement="center-bottom" class="w-100 p-2 rounded"  src="./image/media5.webp" alt="Your Image">
+    <div class="overlay">Beautiful, vibrant and diverse open world</div>
+</div>
+<div class="image-container col-4  glow-border">
+  <img data-aos="fade-down-right" class="w-100 p-2 rounded" src="./image/media6.webp" alt="Your Image">
+  <div class="overlay">Create your own fun</div>
+</div>
+
+</div>
+               
+</section>
+<section class="d-flex pt-5 ">
+  <div class="col-3"></div>
+ 
+  <div class="col-6 bg-light  glow-border ">
+  <img  src="./image/logo.png" width="200px" height="120px" alt="">
+    <h1 class="pt-5 bg-light text-dark  text-center">Playground Games</h1>
+    <div class="bg-light p-5">
+      <p class="bg-light text-dark">Established in 2010 by some of the most experienced and talented developers in the UK game industry with a mission to make genre-defining video games for a global audience, Playground Games, located in Leamington Spa,
+  UK, are the creators and developers of the award-winning Forza Horizon games.</p>
+
+   
+ </div>
+  </div>
+  <div class="col-3"></div>
+  
+</section>
+<section class="py-4 w-100 shadow ">
+    <h1  class="text-center text-danger py-3">FUTURE TRENDS</h1>
+<div  style="flex-wrap: wrap;" class=" d-flex justify-content-evenly align-items-justify">
+    <div data-aos="zoom-in" class=" col-4 glow-border ">
+      <div class="">
+        <img class="   img-fluid " src="./image/web1.webp " alt="">
+      </div>
+       <div class="flip-card-back">
+        <h3>Futured Rivals:Eracing Association</h3>
+       </div>
+       
+    </div>
+    <div data-aos="zoom-in-up" class="col-4  glow-border">
+        <img  class="  img-fluid "  src="./image/web2.webp" alt="">
+        <h3>Futured Multiplyer : ROAD TO RACE</h3>
+    </div>
+    <div  data-aos="zoom-in-left" class=" col-4  glow-border">
+        <img  class=" img-fluid "  src="./image/web3.webp" alt="">
+        <h3>Futured Tour : ROAD TO RACE</h3>
+    </div>
+</div>
+</section>
+
+       
+
+
+ 
+    
+
+   <!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span data-aos="fade-right">Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start pt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <a class=" swing navbar-brand me-2" href="#">
+              <img data-aos="fade-right"
+                src="https://1000logos.net/wp-content/uploads/2020/09/Forza-Horizon-emblem.jpg"
+                width="90px"
+                height="50px"
+                alt="MDB Logo"
+                loading="lazy"
+                style="margin-top: -1px;"
+              />
+            </a>
+          <span data-aos="fade-right" id="title">FORZA </span>
+          </h6>
+          <p data-aos="fade-right">
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 ata-aos="zoom-in" class="text-uppercase fw-bold mb-4">
+           FORZA  HORIZON
+          </h6>
+          <p  data-aos="fade-up"
+          data-aos-duration="3000">
+     
+            <a href="#!" class="text-reset">Forza Horizon 1</a>
+          </p>
+          <p data-aos="fade-up"
+          data-aos-duration="3000">
+    
+            <a href="#!" class="text-reset">Forza Horizon 2</a>
+          </p>
+          <p data-aos="fade-up"
+          data-aos-duration="3000">
+    
+            <a href="#!" class="text-reset">Forza Horizon 3</a>
+          </p>
+          <pdata-aos="fade-up"
+          data-aos-duration="3000">
+     
+            <a href="#!" class="text-reset">Forza Horizon 4</a>
+          </p>
+          <p data-aos="fade-up"
+          data-aos-duration="3000">
+   
+            <a href="#!" class="text-reset">Forza Horizon 5</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500" class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500">
+            <a  href="#!" class="text-reset">Home</a>
+          </p>
+          <p data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500">
+            <a href="#!" class="text-reset">About</a>
+          </p>
+          <p data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500">
+            <a href="#!" class="text-reset">Motorspot</a>
+          </p>
+          <p data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500">
+            <a href="#!" class="text-reset">Community</a>
+          </p>
+        </div>
+        
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</body>
+<script>
+  AOS.init();
+</script>
+
+</html>
